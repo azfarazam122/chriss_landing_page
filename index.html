@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>H - Kfz-Zulassung</title>
+    <meta name="description" content="H - Kfz-Zulassung" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ________________________________________________ -->
+    <style>
+      .headPara {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(landing_page_template/banner-bk.jpg)">
+      <div class="container text-center text-md-left">
+        <header>
+          <div class="row justify-content-between">
+            <div class="col-2">
+              <img src="landing_page_template/logo.png" alt="logo" />
+            </div>
+            <div class="col-6 align-self-center text-right">
+              <a href="#" class="text-white lead">Get Early Access</a>
+            </div>
+          </div>
+        </header>
+        <div class="row col-md-12">
+          <div class="col-md-6">
+            <h1
+              style="color: #ee472f"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              class="text-start font-weight-bold my-5 font-weight-bold"
+            >
+              WILLKOMMEN BEI IHREM DIGITALEN ZULASSUNGSDIENST
+            </h1>
+            <div style="width: 150px">
+              <hr class="style5" style="border-top: 1px dashed #fff" />
+            </div>
+            <ul class="px-0 list-unstyled text-start">
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Sofortzulassung nach wenigen Minuten*
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Kfz-Zulassung
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Kfz-Abmeldung & Ummeldung
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Kennzeichen-Service inkl.
+                  Wunschkennzeichen
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Umweltplakette und Zubehör
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> 24/7 bundesweit
+                </p>
+              </li>
+            </ul>
+            <div style="width: 150px">
+              <hr class="style5" style="border-top: 1px dashed #fff" />
+            </div>
+            <a
+              href="#"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              style="width: 300px"
+              class="btn my-4 font-weight-bold atlas-cta cta-green text-uppercase fw-bold"
+              >Jetzt beauftragen</a
+            >
+          </div>
+          <div class="col-md-6">
+            <h1
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              class="text-start text-white my-5 font-weight-bold"
+            >
+              ERLEDIGEN SIE ALLES BEQUEM VON ZU HAUSE AUS
+            </h1>
+            <div style="width: 150px">
+              <hr class="style5" style="border-top: 1px dashed #fff" />
+            </div>
+            <ul class="px-0 list-unstyled text-start">
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Kein Warten in Schlangen
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Kein Papierkramm
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Keine Bürobesuche
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Ein einfaches Prozess
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Sie brauchen lediglich ein Laptop oder
+                  Smartphone
+                </p>
+              </li>
+              <li>
+                <p
+                  data-aos="fade"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  class="text-white my-0 headPara"
+                >
+                  <i style="color: #ee472f" class="fa fa-check" aria-hidden="true"></i> Transparente und günstige Preise
+                </p>
+              </li>
+            </ul>
+            <div style="width: 150px">
+              <hr class="style5" style="border-top: 1px dashed #fff" />
+            </div>
+            <h4
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              class="text-white font-weight-bold"
+            >
+              UNSER ZULASSUNGSDIENST IST FÜR SIE BEREITS AB
+            </h4>
+            <h2
+              style="color: #ee472f"
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              class="font-weight-bold"
+            >
+              59,99 EURO
+            </h2>
+            <h5
+              data-aos="fade"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              class="text-white font-weight-bold mt-3"
+            >
+              VERFÜGBAR
+            </h5>
+          </div>
+        </div>
+        <div class="mt-4">
+          <small class="text-white" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+            * wenn die jeweilige Zulassungsstelle das automatisierte Zulassungsverfahren unterstützt
+          </small>
+        </div>
+      </div>
+    </div>
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+      <div data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+        <h3 class="text-dark font-weight-bold">
+          Sparen Sie Zeit und Geld: Ihre digitale Lösung für Kfz-Zulassungen, Ab- und Ummeldungen – einfach und effizient mit nur
+          wenigen Klicks.
+        </h3>
+        <p class="mt-4" style="color: #666666; font-size: 18px; font-weight: 600">
+          Die Abwicklung Ihrer Kfz-Angelegenheiten sollte unkompliziert und stressfrei sein. Deshalb bieten wir Ihnen eine
+          transparente und bequeme Lösung, die schon ab 59,99 Euro beginnt. Mit unserer Dienstleistung investieren Sie nicht nur
+          in Effizienz; Sie unterstützen auch einen guten Zweck. Für jede durchgeführte Zulassung spenden wir 1,50 Euro an das
+          Deutsche Kinderhilfswerk e.V., eine Organisation, die sich aktiv gegen Kinderarmut in Deutschland einsetzt.
+        </p>
+        <br />
+        <p style="color: #666666; font-size: 18px; font-weight: 600">
+          Genießen Sie den Luxus, alle benötigten Dienstleistungen gebündelt aus einer Hand zu erhalten. Neu in unserem Angebot
+          ist die Sofortzulassung – eine innovative Lösung, die es Ihnen ermöglicht, binnen Minuten einen vorübergehenden
+          Zulassungsbescheid per E-Mail zu erhalten*, damit Ihr Fahrzeug ohne Verzögerung am Straßenverkehr teilnehmen kann. Als
+          Ihr Partner für digitale Kfz-Dienstleistungen bieten wir Ihnen diese besondere Form der Zulassung mit einer
+          Geschwindigkeit und Bequemlichkeit, die uns von anderen Dienstleistern abhebt.
+        </p>
+        <br />
+        <p style="color: #666666; font-size: 18px; font-weight: 600">
+          Unser umfassendes Serviceangebot beinhaltet neben der Sofortzulassung auch klassische Dienstleistungen wie Ab- und
+          Ummeldungen sowie eine Vielzahl weiterer Leistungen. Optional können Sie bei uns auch Kennzeichen, Wunschkennzeichen,
+          Umweltplaketten und anderes Zubehör bestellen. Wir liefern alles direkt und bequem zu Ihnen nach Hause. Sparen Sie sich
+          Zeit und Nerven beim Warten und Anstehen – mit unserem Service kommt alles, was Sie für Ihr Fahrzeug benötigen, direkt
+          zu Ihnen.
+        </p>
+        <br />
+        <br />
+        <br />
+        <h3
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="text-dark font-weight-bold"
+        >
+          Wir akzeptieren alle gängige Zahlungsmittel
+        </h3>
+        <div class="col-md-12 row mt-5" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true">
+          <div class="col-md-3">
+            <div class="mx-auto" style="width: 50px">
+              <i class="fa-brands fa-paypal" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">PayPal</h5>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mx-auto" style="width: 70px">
+              <i class="fa-brands fa-cc-mastercard" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">Mastercard</h5>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mx-auto" style="width: 70px">
+              <i class="fa-brands fa-cc-visa" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">Visa</h5>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mx-auto" style="width: 40px">
+              <i class="fa-solid fa-eur" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">SEPA</h5>
+            </div>
+          </div>
+        </div>
+        <p
+          class="mt-4"
+          style="color: #666666; font-size: 18px; font-weight: 600"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Wir bieten Ihnen eine breite Palette an sicheren Zahlungsmethoden, damit Sie mit Vertrauen einkaufen können. Unser Ziel
+          ist es, Ihnen eine Vielzahl von Zahlungsoptionen anzubieten, um Ihre Bestellung schnell und problemlos abzuschließen.
+          Die angegebene Gesamtsumme enthält bereits alle Kosten, die von der Zulassungsstelle verlangt werden.
+        </p>
+        <div class="text-center">
+          <a
+            href="#"
+            data-aos="fade"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            style="width: 300px"
+            class="btn my-4 font-weight-bold atlas-cta cta-green text-uppercase my-5 fw-bold"
+            >Zum Onlineformular
+          </a>
+        </div>
+      </div>
+      <div class="text-center">
+        <h2 class="font-weight-bold mt-5">Unsere Leistungen</h2>
+        <small class="">Wir bieten Ihnen alle Zulassungsdienste und liefern Ihr gewünschtes Zubehör</small>
+      </div>
+      <div class="row mt-3">
+        <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-3 text-center">
+          <img
+            src="landing_page_template/OurServices/1.jpg"
+            alt="Anti-spam"
+            class="mx-auto rounded-circle"
+            style="width: 130px"
+          />
+          <h5 class="font-weight-bold">KFZ-ZULASSUNG & SOFORTZULASSUNG</h5>
+          <p
+            class="mt-4"
+            style="color: #666666; font-size: 16px; font-weight: 600"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Für Fahrzeuge aller Art, egal ob Neu- oder Gebrauchtwagen, Motorräder, Anhänger, Wohnwagen, Lastkraftwagen und mehr –
+            Unkomplizierte Zulassungsdienstleistungen für Privat- und Geschäftskunden.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-3 text-center">
+          <img
+            src="landing_page_template/OurServices/2.jpg"
+            alt="Anti-spam"
+            class="mx-auto rounded-circle"
+            style="width: 130px"
+          />
+          <h5 class="font-weight-bold">KFZ-ABMELDUNG & -UMMELDUNG</h5>
+          <p
+            class="mt-4"
+            style="color: #666666; font-size: 16px; font-weight: 600"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Schnelle und unkomplizierte KFZ-Abmeldung und -Ummeldung, sowohl mit als auch ohne Halterwechsel. Für einen
+            reibungslosen Fahrzeugwechsel oder Umzug – egal ob privat oder geschäftlich. Wir kümmern uns um alle Formalitäten.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-3 text-center">
+          <img
+            src="landing_page_template/OurServices/3.jpg"
+            alt="Phishing Detect"
+            class="mx-auto rounded-circle"
+            style="width: 130px"
+          />
+          <h5 class="font-weight-bold">DIENSTLEISTUNGEN FÜR GESCHÄFTS- UND GEWERBEKUNDEN</h5>
+          <p
+            class="mt-4"
+            style="color: #666666; font-size: 16px; font-weight: 600"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Entdecken Sie die Zukunft des Fahrzeugmanagements mit unserer digitalen KFZ-Zulassungsplattform. Von schnellen
+            Zulassungen bis zu Tageszulassungen bieten wir flexible Lösungen für jeden Bedarf – effizient und benutzerfreundlich.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-3 text-center">
+          <img
+            src="landing_page_template/OurServices/4.jpg"
+            alt="Smart Scan"
+            class="mx-auto rounded-circle"
+            style="width: 130px"
+          />
+          <h5 class="font-weight-bold">KENNZEICHENSERVICE UND ZUBEHÖR</h5>
+          <p
+            class="mt-4"
+            style="color: #666666; font-size: 16px; font-weight: 600"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            Mit unserem Lieferservice bieten wir Ihnen eine kinderleichte Bestellung für Kennzeichen und Zubehör. Geprüfte
+            Qualität, deutschlandweit verfügbar, inklusive Wunschkennzeichen und Saisonkennzeichen. Wir liefern direkt nach Hause
+            – schnell und bequem.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Simple Process Flow  -->
+    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="container my-5 py-2">
+      <div class="text-center">
+        <h2 class="font-weight-bold mt-5">Einfacher Prozessablauf</h2>
+        <small class="">Sie können alle Vorgänge bequem an Ihrem Computer oder Smartphone abwickeln.</small>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between mt-5">
+        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f3f2f2">
+          <div class="text-center">
+            <h3 class="font-weight-bold">Einfacher Prozessablauf</h3>
+            <i class="fa-solid fa-clipboard-list" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="align-self-lg-center">
+          <i class="fa-solid fa-right-long" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+        </div>
+        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f3f2f2">
+          <div class="text-center">
+            <h3 class="font-weight-bold">Videoident-Verfahren</h3>
+            <i class="fa-solid fa-address-card" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="align-self-lg-center">
+          <i class="fa-solid fa-right-long" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+        </div>
+        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f3f2f2">
+          <div class="text-center">
+            <h3 class="font-weight-bold">Lieferung der Unterlagen</h3>
+            <i class="fa-solid fa-car" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Simple Process Flow  -->
+    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="container my-5 py-2">
+      <div class="first-step">
+        <div class="d-flex">
+          <span class="font-weight-bold" style="font-size: 80px; color: #ee472f">1</span>
+          <h3 class="ml-3 my-5 font-weight-bold align-self-center">Einfacher Prozessablauf</h3>
+        </div>
+        <p
+          class="mt-4"
+          style="color: #666666; font-size: 18px; font-weight: 600"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Beginnen Sie Ihren Weg zur neuen Fahrzeugzulassung, Ummeldung, Abmeldung oder anderen Dienstleistungen rund um Ihr Kfz
+          mit unserem intuitiven Online-Formular. Unser Service deckt das gesamte Spektrum der internetbasierten Fahrzeugzulassung
+          ab, sodass Sie alle notwendigen Schritte bequem von zu Hause aus erledigen können. Wir legen größten Wert darauf, dass
+          Sie als unser Kunde alle erforderlichen Daten präzise und unkompliziert eingeben können. Jedes Feld in unserem Formular
+          ist deutlich markiert, damit Sie genau wissen, welche Informationen benötigt werden. Sollten Sie Fragen zu einem
+          bestimmten Feld haben, finden Sie unter dem Fragezeichen-Symbol detaillierte Hilfestellungen, die erklären, was genau
+          erforderlich ist.
+          <br />
+          <br />
+          Darüber hinaus bieten wir Ihnen die Möglichkeit, direkt über unser Formular nicht nur Ihr neues Fahrzeug anzumelden,
+          sondern auch beispielsweise ein Wunschkennzeichen zusammen mit einer Umweltplakette zu bestellen und vieles mehr – eine
+          Komplettlösung, die Ihnen Zeit und Mühe spart. Alles aus einer Hand und mit nur einer Bestellung!
+          <br />
+          <br />
+          Für die Bestellung eines Wunschkennzeichens benötigen Sie eine Reservierungs-PIN. Sollten Sie diese noch nicht haben,
+          ist das kein Problem: Über unseren Kennzeichendienst im oberen Menü der Homepage können Sie sofort ein Wunschkennzeichen
+          reservieren und bestellen.
+        </p>
+      </div>
+
+      <div class="second-step">
+        <div class="d-flex">
+          <span class="font-weight-bold" style="font-size: 80px; color: #ee472f">2</span>
+          <h3 class="ml-3 my-5 font-weight-bold align-self-center">Ihre Identität online prüfen</h3>
+        </div>
+        <p
+          class="mt-4"
+          style="color: #666666; font-size: 18px; font-weight: 600"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Nachdem Sie unser Online-Formular sorgfältig ausgefüllt haben, führen wir Sie zum nächsten wichtigen Schritt weiter: der
+          Online-Identitätsprüfung. Unmittelbar danach erhalten Sie von uns eine Bestätigungsemail, die eine Zusammenfassung aller
+          von Ihnen bereitgestellten Informationen sowie einen Link zu unserem Videoident-Partner enthält. Diese E-Mail ermöglicht
+          Ihnen direkten Zugang zu einem sicheren und effizienten Identifizierungsprozess.
+          <br />
+          <br />
+          Um Ihre Identität zu verifizieren, klicken Sie einfach auf den Link in der E-Mail. Sie werden dann zu einem Video-Chat
+          weitergeleitet, in dem Sie sich schnell und ohne Umstände von zu Hause aus identifizieren können. Unser Partner für das
+          Videoident-Verfahren erfüllt höchste Sicherheits- und Datenschutzstandards, um den Schutz Ihrer persönlichen Daten zu
+          gewährleisten. Die gesamte Online-Identitätsprüfung dauert nur wenige Minuten. Nach erfolgreichem Abschluss des
+          Videoident-Verfahrens übermitteln wir Ihre Daten sofort und in Echtzeit an die Zulassungsstelle.
+        </p>
+      </div>
+
+      <div class="third-step">
+        <div class="d-flex">
+          <span class="font-weight-bold" style="font-size: 80px; color: #ee472f">3</span>
+          <h3 class="ml-3 my-5 font-weight-bold align-self-center">Bereitstellung der Unterlagen</h3>
+        </div>
+        <p
+          class="mt-4"
+          style="color: #666666; font-size: 18px; font-weight: 600"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Nach erfolgreicher Online-Prüfung Ihrer Identität setzen wir den Prozess ohne Verzögerung fort. Je nachdem, ob Ihre
+          Zulassungsstelle ein automatisiertes Verfahren unterstützt, bieten wir Ihnen zwei komfortable Wege, die Zulassung Ihres
+          Fahrzeugs schnellstmöglich abzuschließen.
+          <br />
+          <br />
+          <b>Digitale Freigabe für sofortige Mobilität:</b>
+          Unterstützt Ihre Zulassungsstelle das automatisierte Verfahren, erhalten Sie von uns schon nach wenigen Minuten einen
+          vorläufigen Zulassungsbescheid direkt per E-Mail. Diese schnelle digitale Freigabe ermöglicht es Ihnen, Ihr Fahrzeug
+          unverzüglich zu nutzen, was maximale Flexibilität und minimale Wartezeiten für Sie bedeutet.
+          <br />
+          <br />
+          <b>Klassischer Postweg für Ihre Unterlagen:</b>
+          Sollte Ihre Zulassungsstelle ein manuelles Verfahren nutzen, sorgen wir dafür, dass alle notwendigen Unterlagen schnell
+          und sicher per Post zu Ihnen gelangen. Auch wenn dieser Weg etwas mehr Zeit in Anspruch nehmen kann, stellen wir sicher,
+          dass Sie alle Dokumente erhalten, die für die endgültige Zulassung erforderlich sind.
+          <br />
+          <br />
+          Wir passen unseren Service flexibel an die spezifischen Bedingungen Ihrer lokalen Zulassungsstelle an, um Ihnen einen
+          reibungslosen und schnellen Start zu ermöglichen.
+        </p>
+      </div>
+
+      <div class="fourth-step">
+        <div class="d-flex">
+          <span class="font-weight-bold" style="font-size: 80px; color: #ee472f">4</span>
+          <h3 class="ml-3 my-5 font-weight-bold align-self-center">Komfort-Lieferung</h3>
+        </div>
+        <p
+          class="mt-4"
+          style="color: #666666; font-size: 18px; font-weight: 600"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Nachdem Sie die vorherigen Schritte erfolgreich durchlaufen haben, sorgen wir dafür, dass die von Ihnen bestellten
+          Kennzeichen oder Wunschkennzeichen, Umweltplaketten und jegliches zusätzliche Zubehör schnell und zuverlässig direkt an
+          Ihre Haustür geliefert werden.
+          <br />
+          <br />
+          Ihre Bestellung erreicht Sie innerhalb weniger Werktage an der angegebenen Adresse. Wir bringen alles, was Sie für die
+          Inbetriebnahme Ihres Fahrzeugs benötigen, direkt zu Ihnen – für einen reibungslosen Start.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ  -->
+    <style>
+      .accordion-button:not(.collapsed) {
+        color: white;
+        background-color: #ee472f;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 8px;
+      }
+    </style>
+    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="container my-5 py-2">
+      <div class="text-start">
+        <h2 class="font-weight-bold my-5">Häufig gestellte Fragen</h2>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="mt-4">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <i class="fa-solid fa-desktop fs-4 me-3"></i>
+              <span class="fw-bold fs-5"> Welche Unterlagen benötige ich für die digitale KFZ-Zulassung? </span>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Für die digitale KFZ-Zulassung bei uns benötigen Sie keinerlei physische Unterlagen. Unsere benutzerfreundliche
+              Onlineplattform ermöglicht es Ihnen, den gesamten Zulassungsprozess bequem von Ihrem Computer oder Mobilgerät aus zu
+              erledigen. Sie müssen lediglich unser Onlineformular ausfüllen, um den Vorgang zu starten. Wir haben den Prozess so
+              gestaltet, dass er möglichst einfach und zeitsparend für unsere Kunden ist.
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <i class="fa-solid fa-gear fs-4 me-3"></i>
+              <span class="fw-bold fs-5">
+                Wie lange dauert die Bearbeitungszeit für die digitale KFZ-Zulassung, -Abmeldung und -Ummeldung?
+              </span>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Die Bearbeitungszeit für die digitale KFZ-Zulassung, -Abmeldung und -Ummeldung ist abhängig von der
+              Arbeitsgeschwindigkeit der zuständigen Behörde. Wir übermitteln Ihrer Daten sofort an die Behörde, sobald diese uns
+              vollständig vorliegen. Die Bearbeitungszeit obliegt dann der Behörde, die sowohl vollautomatisierte als auch
+              teilautomatisierte Verfahren nutzen kann. Wir haben keinen Einfluss auf die Entscheidung der Behörde darüber,
+              welches Verfahren angewendet wird. Es ist jedoch festzuhalten, dass vollautomatisierte Prozesse in der Regel
+              schneller sind. Im Idealfall bei einem vollautomatisierten Verfahren, erhalten Sie den Zulassungsbescheid zeitnah,
+              oft bereits innerhalb von wenigen Minuten, per E-Mail. Wir verstehen, dass eine schnelle Abwicklung für Sie wichtig
+              ist, und wir setzen alles daran, den Prozess so reibungslos wie möglich zu gestalten.
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <i class="fa-solid fa-paper-plane fs-4 me-3"></i>
+              <span class="fw-bold fs-5"> Welche Gebühren fallen bei der digitalen KFZ-Zulassung an? </span>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Unsere Dienstleistung zur digitalen KFZ-Zulassung bietet Ihnen einen transparenten Service zu einem festen Preis von
+              nur 19,99 Euro. Zusätzlich zu dieser Servicegebühr fallen die regulären Zulassungsgebühren an, die auch bei einer
+              herkömmlichen Zulassung vor Ort von der jeweiligen Zulassungsstelle erhoben werden.
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <i class="fa-solid fa-layer-group fs-4 me-3"></i>
+              <span class="fw-bold fs-5"> Was mache ich, wenn ein Fehler bei der digitalen KFZ-Zulassung auftritt? </span>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Bei uns steht Kundenzufriedenheit an erster Stelle, und wir verstehen, dass selbst bei reibungslosen Prozessen
+              manchmal unvorhergesehene Herausforderungen auftreten können. Sollte es zu einem Fehler bei Ihrer digitalen
+              KFZ-Zulassung kommen, der auf unser Verschulden zurückzuführen ist, können Sie darauf vertrauen, dass wir sofort
+              handeln, um den Fehler zu beheben. Unser Ziel ist es, Ihnen einen makellosen Service zu bieten, und falls trotz
+              unserer Bemühungen eine Zulassung nicht erfolgreich ist, erstatten wir Ihnen selbstverständlich umgehend den vollen
+              Betrag zurück. Wir verstehen, dass Ihre Zeit wertvoll ist, und wir wollen sicherstellen, dass Sie sich zu jeder Zeit
+              gut betreut fühlen. In Fällen, in denen der Fehler aufgrund von Tippfehlern oder ungenauen Angaben im Formular
+              seitens des Kunden auftritt, sind wir dennoch für Sie da. Unsere transparente Vorgehensweise ermöglicht es uns, auch
+              in solchen Situationen fair zu handeln. In diesen Fällen bieten wir eine Rückerstattung an, abzüglich der
+              entstandenen Kosten, um sicherzustellen, dass Sie nur für den Service bezahlen, den Sie erhalten haben. Ihre
+              Zufriedenheit ist unser Antrieb, und wir sind stolz darauf, nicht nur erstklassige Dienstleistungen, sondern auch
+              ein Höchstmaß an Verlässlichkeit und Transparenz anzubieten.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a
+          href="#"
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="btn my-4 fs-5 font-weight-bold atlas-cta cta-green text-uppercase fw-bold"
+          >Zu den weiteren Fragen
+        </a>
+      </div>
+    </div>
+    <!-- <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+      <div class="container my-5">
+        <div class="row justify-content-between text-center text-md-left">
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+            <h2 class="font-weight-bold">Take a look inside</h2>
+            <p class="my-4">
+              Te iisque labitur eos, nec sale argumentum scribentur no, <br />
+              augue disputando in vim. Erat fugit sit at, ius lorem deserunt deterruisset no.
+            </p>
+            <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
+            <img src="landing_page_template/feature-1.png" alt="Take a look inside" class="mx-auto d-block" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- feature (green background) -->
+    <!-- <div class="jumbotron jumbotron-fluid feature" id="feature-last">
+      <div class="container">
+        <div class="row justify-content-between text-center text-md-left">
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+            <h2 class="font-weight-bold">Safe and reliable</h2>
+            <p class="my-4">
+              Duo suas detracto maiestatis ad, commodo lucilius invenire nec ad,
+              <br />
+              eum et oratio disputationi. Falli lobortis his ad
+            </p>
+            <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            class="col-md-6 align-self-center flex-md-first"
+          >
+            <img src="landing_page_template/feature-2.png" alt="Safe and reliable" class="mx-auto d-block" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- price table -->
+    <div class="container my-5 py-2" id="price-table">
+      <h2 class="text-center font-weight-bold d-block mb-3">Check our pricing</h2>
+      <div class="row">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5"
+        >
+          <h4 class="my-4">STARTUP</h4>
+          <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">0</span> / MO.</p>
+          <ul class="list-unstyled">
+            <li>Up to 5 Documents</li>
+            <li>Up to 3 Reviews</li>
+            <li>5 team Members</li>
+            <li>Limited Support</li>
+          </ul>
+          <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5 rounded"
+          id="price-table__premium"
+        >
+          <h4 class="my-4">PREMIUM</h4>
+          <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">10</span> / MO.</p>
+          <ul class="list-unstyled">
+            <li>Up to 15 Documents</li>
+            <li>Up to 10 Reviews</li>
+            <li>25 team Members</li>
+            <li>Limited Support</li>
+          </ul>
+          <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Free</a>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5"
+        >
+          <h4 class="my-4">PROFESSIONAL</h4>
+          <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">30</span> / MO.</p>
+          <ul class="list-unstyled">
+            <li>Unlimited Documents</li>
+            <li>Unlimited Reviews</li>
+            <li>Unlimited Members</li>
+            <li>Unlimited Support</li>
+          </ul>
+          <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>
+        </div>
+      </div>
+    </div>
+    <!-- client -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="landing_page_template/client-1.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="landing_page_template/client-2.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="landing_page_template/client-3.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="landing_page_template/client-4.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="landing_page_template/client-5.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="landing_page_template/client-6.png" class="mx-auto d-block" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(landing_page_template/contact-bk.jpg)">
+      <div class="container my-5">
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-white">
+            <h2 class="font-weight-bold">Contact Us</h2>
+            <p class="my-4">
+              Te iisque labitur eos, nec sale argumentum scribentur,
+              <br />
+              augue disputando in vim. Erat fugit sit at, ius lorem.
+            </p>
+            <ul class="list-unstyled">
+              <li>Email : company_email@com</li>
+              <li>Phone : 361-688-5824</li>
+              <li>Address : 4826 White Avenue, Corpus Christi, Texas</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="name" class="form-control" id="name" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="Email">Your Email</label>
+                  <input type="email" class="form-control" id="Email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">Copyright © 2018 Chen, Yi-Ya.</div>
+          <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-medium" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+
+    <script>
+      AOS.init({});
+    </script>
+  </body>
+</html>
