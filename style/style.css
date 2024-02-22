@@ -114,13 +114,13 @@
   }
 
   #contact form {
-    color: #00ffad;
+    color: #ee472f;
   }
 
   #contact form input,
   #contact form textarea {
     background: transparent;
-    border: 1px solid #00ffad;
+    border: 1px solid #ee472f;
     color: #ffffff;
   }
 
