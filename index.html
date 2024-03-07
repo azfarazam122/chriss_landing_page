@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>H - Kfz-Zulassung</title>
     <meta name="description" content="H - Kfz-Zulassung" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -33,27 +33,113 @@
       .headPara {
         font-size: 18px;
       }
+      .accordion-header > button {
+        background: #f6f8f9;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .accordion-header > button > span {
+        font-size: 16px !important;
+      }
+
+      .btn:hover {
+        background-color: #ee472f !important;
+      }
+
+      @media screen and (max-width: 991px) {
+        #SimpleProcessFlow_Vertical {
+          display: block !important;
+        }
+        #SimpleProcessFlow_Horizontal {
+          display: none !important;
+        }
+      }
     </style>
   </head>
 
   <body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img width="300px" id="mainLogoImage" src="landing_page_template/logo.png" alt="" srcset="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left Side Of Navbar -->
+          <ul class="navbar-nav me-auto"></ul>
+
+          <!-- Right Side Of Navbar -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-dark" href=""
+                >ZULASSUNGSDIENSTE <i style="color: #ee472f" class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+
+            <li class="nav-item ms-auto">
+              <a class="nav-link fw-bold text-dark" href=""
+                >KENNZEICHENDIENSTE <i style="color: #ee472f" class="fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link fw-bold text-dark" href="">FAQ</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link fw-bold text-dark" href="">KONTAKT</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link fw-bold text-dark" href="">FIRMENLOGIN</a>
+            </li>
+
+            <!-- <div class="btn-group ms-auto">
+              <span class="py-2 nav-link navbar-custom-dropdown h-100" data-bs-toggle="dropdown" aria-expanded="false">
+                Rechtliches<i class="mx-2 fa-solid fa-angle-down"></i>
+              </span>
+
+              <ul class="dropdown-menu my-0 w-100" style="position: absolute; text-align: start; padding-left: 5px">
+                <li class="nav-item">
+                  <a class="nav-link" href="/datenschutz">{{ __('Datenschutz') }}</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/agb">{{ __('AGB') }}</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/impressum">{{ __('Impressum') }}</a>
+                </li>
+              </ul>
+            </div> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav -->
+
     <!-- banner -->
-    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(landing_page_template/banner-bk.jpg)">
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="banner"
+      style="background-image: url(landing_page_template/header_img.png); background-position: center"
+    >
       <div class="container text-center text-md-left">
-        <header>
-          <div class="row justify-content-between">
-            <div class="col-2">
-              <img src="landing_page_template/logo.png" alt="logo" />
-            </div>
-            <div class="col-6 align-self-center text-right">
-              <a href="#" class="text-white lead">Get Early Access</a>
-            </div>
-          </div>
-        </header>
+        <header></header>
         <div class="row col-md-12">
           <div class="col-md-6">
             <h1
-              style="color: #ee472f"
+              style="color: #ee472f; font-size: 2.4rem"
               data-aos="fade"
               data-aos-easing="linear"
               data-aos-duration="1000"
@@ -150,6 +236,7 @@
           </div>
           <div class="col-md-6">
             <h1
+              style="font-size: 2.4rem"
               data-aos="fade"
               data-aos-easing="linear"
               data-aos-duration="1000"
@@ -277,89 +364,31 @@
           Sparen Sie Zeit und Geld: Ihre digitale Lösung für Kfz-Zulassungen, Ab- und Ummeldungen – einfach und effizient mit nur
           wenigen Klicks.
         </h3>
-        <p class="mt-4" style="color: #666666; font-size: 18px; font-weight: 600">
-          Die Abwicklung Ihrer Kfz-Angelegenheiten sollte unkompliziert und stressfrei sein. Deshalb bieten wir Ihnen eine
-          transparente und bequeme Lösung, die schon ab 59,99 Euro beginnt. Mit unserer Dienstleistung investieren Sie nicht nur
-          in Effizienz; Sie unterstützen auch einen guten Zweck. Für jede durchgeführte Zulassung spenden wir 1,50 Euro an das
-          Deutsche Kinderhilfswerk e.V., eine Organisation, die sich aktiv gegen Kinderarmut in Deutschland einsetzt.
-        </p>
-        <br />
-        <p style="color: #666666; font-size: 18px; font-weight: 600">
-          Genießen Sie den Luxus, alle benötigten Dienstleistungen gebündelt aus einer Hand zu erhalten. Neu in unserem Angebot
-          ist die Sofortzulassung – eine innovative Lösung, die es Ihnen ermöglicht, binnen Minuten einen vorübergehenden
-          Zulassungsbescheid per E-Mail zu erhalten*, damit Ihr Fahrzeug ohne Verzögerung am Straßenverkehr teilnehmen kann. Als
-          Ihr Partner für digitale Kfz-Dienstleistungen bieten wir Ihnen diese besondere Form der Zulassung mit einer
-          Geschwindigkeit und Bequemlichkeit, die uns von anderen Dienstleistern abhebt.
-        </p>
-        <br />
-        <p style="color: #666666; font-size: 18px; font-weight: 600">
-          Unser umfassendes Serviceangebot beinhaltet neben der Sofortzulassung auch klassische Dienstleistungen wie Ab- und
-          Ummeldungen sowie eine Vielzahl weiterer Leistungen. Optional können Sie bei uns auch Kennzeichen, Wunschkennzeichen,
-          Umweltplaketten und anderes Zubehör bestellen. Wir liefern alles direkt und bequem zu Ihnen nach Hause. Sparen Sie sich
-          Zeit und Nerven beim Warten und Anstehen – mit unserem Service kommt alles, was Sie für Ihr Fahrzeug benötigen, direkt
-          zu Ihnen.
-        </p>
-        <br />
-        <br />
-        <br />
-        <h3
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="text-dark font-weight-bold"
-        >
-          Wir akzeptieren alle gängige Zahlungsmittel
-        </h3>
-        <div class="col-md-12 row mt-5" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true">
-          <div class="col-md-3">
-            <div class="mx-auto" style="width: 50px">
-              <i class="fa-brands fa-paypal" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
-            </div>
-            <div class="text-center">
-              <h5 class="">PayPal</h5>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="mx-auto" style="width: 70px">
-              <i class="fa-brands fa-cc-mastercard" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
-            </div>
-            <div class="text-center">
-              <h5 class="">Mastercard</h5>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="mx-auto" style="width: 70px">
-              <i class="fa-brands fa-cc-visa" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
-            </div>
-            <div class="text-center">
-              <h5 class="">Visa</h5>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="mx-auto" style="width: 40px">
-              <i class="fa-solid fa-eur" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
-            </div>
-            <div class="text-center">
-              <h5 class="">SEPA</h5>
-            </div>
-          </div>
+        <div class="px-3 py-2 rounded" style="background: #f6f8f9">
+          <p class="mt-4" style="color: #666666; font-size: 18px; font-weight: 600">
+            Die Abwicklung Ihrer Kfz-Angelegenheiten sollte unkompliziert und stressfrei sein. Deshalb bieten wir Ihnen eine
+            transparente und bequeme Lösung, die schon ab 59,99 Euro beginnt. Mit unserer Dienstleistung investieren Sie nicht nur
+            in Effizienz; Sie unterstützen auch einen guten Zweck. Für jede durchgeführte Zulassung spenden wir 1,50 Euro an das
+            Deutsche Kinderhilfswerk e.V., eine Organisation, die sich aktiv gegen Kinderarmut in Deutschland einsetzt.
+          </p>
+          <br />
+          <p style="color: #666666; font-size: 18px; font-weight: 600">
+            Genießen Sie den Luxus, alle benötigten Dienstleistungen gebündelt aus einer Hand zu erhalten. Neu in unserem Angebot
+            ist die Sofortzulassung – eine innovative Lösung, die es Ihnen ermöglicht, binnen Minuten einen vorübergehenden
+            Zulassungsbescheid per E-Mail zu erhalten*, damit Ihr Fahrzeug ohne Verzögerung am Straßenverkehr teilnehmen kann. Als
+            Ihr Partner für digitale Kfz-Dienstleistungen bieten wir Ihnen diese besondere Form der Zulassung mit einer
+            Geschwindigkeit und Bequemlichkeit, die uns von anderen Dienstleistern abhebt.
+          </p>
+          <br />
+          <p style="color: #666666; font-size: 18px; font-weight: 600">
+            Unser umfassendes Serviceangebot beinhaltet neben der Sofortzulassung auch klassische Dienstleistungen wie Ab- und
+            Ummeldungen sowie eine Vielzahl weiterer Leistungen. Optional können Sie bei uns auch Kennzeichen, Wunschkennzeichen,
+            Umweltplaketten und anderes Zubehör bestellen. Wir liefern alles direkt und bequem zu Ihnen nach Hause. Sparen Sie
+            sich Zeit und Nerven beim Warten und Anstehen – mit unserem Service kommt alles, was Sie für Ihr Fahrzeug benötigen,
+            direkt zu Ihnen.
+          </p>
         </div>
-        <p
-          class="mt-4"
-          style="color: #666666; font-size: 18px; font-weight: 600"
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          Wir bieten Ihnen eine breite Palette an sicheren Zahlungsmethoden, damit Sie mit Vertrauen einkaufen können. Unser Ziel
-          ist es, Ihnen eine Vielzahl von Zahlungsoptionen anzubieten, um Ihre Bestellung schnell und problemlos abzuschließen.
-          Die angegebene Gesamtsumme enthält bereits alle Kosten, die von der Zulassungsstelle verlangt werden.
-        </p>
+
         <div class="text-center">
           <a
             href="#"
@@ -373,8 +402,8 @@
           </a>
         </div>
       </div>
-      <div class="text-center">
-        <h2 class="font-weight-bold mt-5">Unsere Leistungen</h2>
+      <div class="text-center my-5">
+        <h2 class="font-weight-bold">Unsere Leistungen</h2>
         <small class="">Wir bieten Ihnen alle Zulassungsdienste und liefern Ihr gewünschtes Zubehör</small>
       </div>
       <div class="row mt-3">
@@ -463,13 +492,21 @@
     </div>
 
     <!-- Simple Process Flow  -->
-    <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="container my-5 py-2">
+    <!-- horizontal -->
+    <div
+      id="SimpleProcessFlow_Horizontal"
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      class="container my-5 py-2"
+    >
       <div class="text-center">
         <h2 class="font-weight-bold mt-5">Einfacher Prozessablauf</h2>
         <small class="">Sie können alle Vorgänge bequem an Ihrem Computer oder Smartphone abwickeln.</small>
       </div>
       <div class="d-flex justify-content-between mt-5">
-        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f3f2f2">
+        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f6f8f9">
           <div class="text-center">
             <h3 class="font-weight-bold">Einfacher Prozessablauf</h3>
             <i class="fa-solid fa-clipboard-list" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
@@ -478,7 +515,7 @@
         <div class="align-self-center">
           <i class="fa-solid fa-right-long" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
         </div>
-        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f3f2f2">
+        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f6f8f9">
           <div class="text-center">
             <h3 class="font-weight-bold">Videoident-Verfahren</h3>
             <i class="fa-solid fa-address-card" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
@@ -487,7 +524,7 @@
         <div class="align-self-center">
           <i class="fa-solid fa-right-long" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
         </div>
-        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f3f2f2">
+        <div class="p-4 rounded" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f6f8f9">
           <div class="text-center">
             <h3 class="font-weight-bold">Lieferung der Unterlagen</h3>
             <i class="fa-solid fa-car" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
@@ -496,6 +533,47 @@
       </div>
     </div>
 
+    <!-- vertical  -->
+    <div
+      id="SimpleProcessFlow_Vertical"
+      style="display: none"
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      class="container my-5 py-2"
+    >
+      <div class="text-center">
+        <h2 class="font-weight-bold mt-5">Einfacher Prozessablauf</h2>
+        <small class="">Sie können alle Vorgänge bequem an Ihrem Computer oder Smartphone abwickeln.</small>
+      </div>
+      <div class="d-flex flex-column align-content-center flex-wrap mt-5">
+        <div class="p-4 rounded" style="width: 300px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f6f8f9">
+          <div class="text-center">
+            <h3 class="font-weight-bold">Einfacher Prozessablauf</h3>
+            <i class="fa-solid fa-clipboard-list" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="align-self-center my-4">
+          <i class="fa-solid fa-arrow-down" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+        </div>
+        <div class="p-4 rounded" style="width: 300px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f6f8f9">
+          <div class="text-center">
+            <h3 class="font-weight-bold">Videoident-Verfahren</h3>
+            <i class="fa-solid fa-address-card" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="align-self-center my-4">
+          <i class="fa-solid fa-arrow-down" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+        </div>
+        <div class="p-4 rounded" style="width: 300px; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; background: #f6f8f9">
+          <div class="text-center">
+            <h3 class="font-weight-bold">Lieferung der Unterlagen</h3>
+            <i class="fa-solid fa-car" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Simple Process Flow  -->
     <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="container my-5 py-2">
       <div class="first-step">
@@ -504,8 +582,8 @@
           <h3 class="ml-3 my-5 font-weight-bold align-self-center">Einfacher Prozessablauf</h3>
         </div>
         <p
-          class="mt-4"
-          style="color: #666666; font-size: 18px; font-weight: 600"
+          class="mt-4 p-3 rounded"
+          style="color: #666666; font-size: 18px; font-weight: 600; background: #f6f8f9"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="1000"
@@ -537,8 +615,8 @@
           <h3 class="ml-3 my-5 font-weight-bold align-self-center">Ihre Identität online prüfen</h3>
         </div>
         <p
-          class="mt-4"
-          style="color: #666666; font-size: 18px; font-weight: 600"
+          class="mt-4 p-3 rounded"
+          style="color: #666666; font-size: 18px; font-weight: 600; background: #f6f8f9"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="1000"
@@ -564,8 +642,8 @@
           <h3 class="ml-3 my-5 font-weight-bold align-self-center">Bereitstellung der Unterlagen</h3>
         </div>
         <p
-          class="mt-4"
-          style="color: #666666; font-size: 18px; font-weight: 600"
+          class="mt-4 p-3 rounded"
+          style="color: #666666; font-size: 18px; font-weight: 600; background: #f6f8f9"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="1000"
@@ -599,8 +677,8 @@
           <h3 class="ml-3 my-5 font-weight-bold align-self-center">Komfort-Lieferung</h3>
         </div>
         <p
-          class="mt-4"
-          style="color: #666666; font-size: 18px; font-weight: 600"
+          class="mt-4 p-3 rounded"
+          style="color: #666666; font-size: 18px; font-weight: 600; background: #f6f8f9"
           data-aos="fade-up"
           data-aos-delay="0"
           data-aos-duration="1000"
@@ -613,6 +691,82 @@
           <br />
           Ihre Bestellung erreicht Sie innerhalb weniger Werktage an der angegebenen Adresse. Wir bringen alles, was Sie für die
           Inbetriebnahme Ihres Fahrzeugs benötigen, direkt zu Ihnen – für einen reibungslosen Start.
+        </p>
+      </div>
+
+      <div class="mt-4">
+        <h3
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="text-dark font-weight-bold mt-5"
+        >
+          Wir akzeptieren alle gängige Zahlungsmittel
+        </h3>
+        <div
+          class="d-flex justify-content-between mt-5 mx-lg-5"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <div class="">
+            <div class="mx-auto" style="width: 50px">
+              <i class="fa-brands fa-paypal" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">PayPal</h5>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="mx-auto" style="width: 70px">
+              <i class="fa-brands fa-cc-mastercard" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">Mastercard</h5>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="mx-auto" style="width: 70px">
+              <i class="fa-brands fa-cc-visa" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">Visa</h5>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="mx-auto" style="width: 70px">
+              <i class="fa-solid fa-calculator" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">Rechnung</h5>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="mx-auto" style="width: 40px">
+              <i class="fa-solid fa-eur" style="font-size: 70px; color: #ee472f" aria-hidden="true"></i>
+            </div>
+            <div class="text-center">
+              <h5 class="">SEPA</h5>
+            </div>
+          </div>
+        </div>
+        <p
+          class="mt-4 p-3 rounded"
+          style="color: #666666; font-size: 18px; font-weight: 600; background: #f6f8f9"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          Wir bieten Ihnen eine breite Palette an sicheren Zahlungsmethoden, damit Sie mit Vertrauen einkaufen können. Unser Ziel
+          ist es, Ihnen eine Vielzahl von Zahlungsoptionen anzubieten, um Ihre Bestellung schnell und problemlos abzuschließen.
+          Die angegebene Gesamtsumme enthält bereits alle Kosten, die von der Zulassungsstelle verlangt werden.
         </p>
       </div>
     </div>
@@ -773,58 +927,69 @@
     <!-- price table -->
     <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="container my-5 py-2">
       <div>
-        <h4
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          style="color: #ee472f"
-          class="font-weight-bold"
-        >
-          SCHNELLE ZULASSUNG
-        </h4>
-        <h2
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="text-dark font-weight-bold"
-        >
-          Über uns
-        </h2>
-        <p
-          class="mt-4"
-          style="color: #666666; font-size: 18px; font-weight: 600"
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="1000"
-          data-aos-once="true"
-        >
-          <b>SCHNELLE-ZULASSUNG.DE </b>
-          ist eine digitale Plattform der Unternehmensgruppe
-          <b>BYTE DOLPHINS UG.</b>
-          Unser Firmensitz befindet sich im Herzen der niedersächsischen Landeshauptstadt Hannover. Von hier aus betreuen wir
-          deutschlandweit sowohl Privat- als auch Firmenkunden. Unsere Angebote umfassen die schnelle und unkomplizierte
-          Zulassung, Ab- und Anmeldung von Fahrzeugen sowie den Versand von Kennzeichen. Zusätzlich bieten wir eine Vielzahl
-          weiterer Services an, einschließlich maßgeschneiderter Lösungen für Gewerbetreibende und Autohäuser. Wir freuen uns
-          darauf, Sie mit unserer umfassenden Expertise und unseren kundenorientierten Dienstleistungen überzeugen zu können.
-        </p>
+        <div class="my-5">
+          <h2
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            class="text-dark text-center font-weight-bold"
+          >
+            Über uns
+          </h2>
+          <div class="text-center fs-5">
+            <small>Schnelle Zulassung</small>
+          </div>
+        </div>
+        <div class="row col-md-12">
+          <div class="col-md-6">
+            <p
+              class="mt-4"
+              style="color: #666666; font-size: 16px; font-weight: 600"
+              data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              data-aos-once="true"
+            >
+              <b>SCHNELLE-ZULASSUNG.DE </b>
+              ist eine digitale Plattform der Unternehmensgruppe
+              <b>BYTE DOLPHINS UG.</b>
+              Unser Firmensitz befindet sich im Herzen der niedersächsischen Landeshauptstadt Hannover. Von hier aus betreuen wir
+              deutschlandweit sowohl Privat- als auch Firmenkunden. Unsere Angebote umfassen die schnelle und unkomplizierte
+              Zulassung, Ab- und Anmeldung von Fahrzeugen sowie den Versand von Kennzeichen. Zusätzlich bieten wir eine Vielzahl
+              weiterer Services an, einschließlich maßgeschneiderter Lösungen für Gewerbetreibende und Autohäuser. Wir freuen uns
+              darauf, Sie mit unserer umfassenden Expertise und unseren kundenorientierten Dienstleistungen überzeugen zu können.
+            </p>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <img
+              style="
+                border-style: solid;
+                border-width: 8px 8px 0px 0px;
+                border-color: #ff482f;
+                border-radius: 20px 20px 20px 20px;
+              "
+              src="landing_page_template/about_us.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
 
-      <div class="d-flex justify-content-between mt-5">
-        <div class="p-4 rounded">
+      <div class="d-flex flex-wrap justify-content-center mt-5">
+        <div class="p-4 m-4 rounded" style="background-color: #f6f8f9; width: 300px">
           <div class="text-center">
             <h2 class="font-weight-bold">100 %</h2>
             <h5 style="color: #ee472f" class="font-weight-bold">Digitalisierung</h5>
           </div>
         </div>
-        <div class="p-4 rounded">
+        <div class="p-4 m-4 rounded" style="background-color: #f6f8f9; width: 300px">
           <div class="text-center">
             <h2 class="font-weight-bold">10.000 +</h2>
             <h5 style="color: #ee472f" class="font-weight-bold">Anzahl von Kunden</h5>
           </div>
         </div>
-        <div class="p-4 rounded">
+        <div class="p-4 m-4 rounded" style="background-color: #f6f8f9; width: 300px">
           <div class="text-center">
             <h2 class="font-weight-bold">100 %</h2>
             <h5 style="color: #ee472f" class="font-weight-bold">Kundenzufriedenheit</h5>
@@ -845,7 +1010,7 @@
       </div>
     </div>
     <!-- client -->
-    <div class="jumbotron jumbotron-fluid">
+    <!-- <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
           <div class="col-sm-4 col-md-2 py-2 align-self-center">
@@ -868,26 +1033,31 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- contact -->
     <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(landing_page_template/contact-bk.jpg)">
       <div class="container my-5">
         <div class="row justify-content-between">
-          <div class="col-md-6 text-white">
-            <h2 class="font-weight-bold">Contact Us</h2>
-            <p class="my-4">
-              Te iisque labitur eos, nec sale argumentum scribentur,
-              <br />
-              augue disputando in vim. Erat fugit sit at, ius lorem.
-            </p>
-            <ul class="list-unstyled">
-              <li>Email : company_email@com</li>
-              <li>Phone : 361-688-5824</li>
-              <li>Address : 4826 White Avenue, Corpus Christi, Texas</li>
-            </ul>
+          <div class="col-md-4 text-white align-self-center">
+            <a class="navbar-brand" href="">
+              <img width="300px" id="mainLogoImage" src="landing_page_template/logo.png" alt="" srcset="" />
+            </a>
+            <p>Powered by Byte Dolphins © 2024</p>
           </div>
+
           <div class="col-md-6">
-            <form>
+            <div class="d-flex justify-content-between">
+              <div>
+                <img width="140px" src="landing_page_template/temp_img.png" alt="" />
+              </div>
+              <div>
+                <img width="140px" src="landing_page_template/temp_img.png" alt="" />
+              </div>
+              <div>
+                <img width="140px" src="landing_page_template/temp_img.png" alt="" />
+              </div>
+            </div>
+            <!-- <form>
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -903,30 +1073,16 @@
                 <textarea class="form-control" id="message" rows="3"></textarea>
               </div>
               <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
-            </form>
+            </form> -->
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- copyright -->
-    <div class="jumbotron jumbotron-fluid" id="copyright">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">Copyright © 2018 Chen, Yi-Ya.</div>
-          <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-medium" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
+          <div class="col-md-2 text-white">
+            <h3 class="font-weight-bold">Contact Us</h3>
+            <ul class="list-unstyled">
+              <li><i style="color: #ee472f" class="fa-solid fa-angle-right me-2"></i>AGB</li>
+              <li><i style="color: #ee472f" class="fa-solid fa-angle-right me-2"></i>Datenschutz</li>
+              <li><i style="color: #ee472f" class="fa-solid fa-angle-right me-2"></i>Widerrufsbelehrung</li>
+              <li><i style="color: #ee472f" class="fa-solid fa-angle-right me-2"></i>Impressum</li>
+            </ul>
           </div>
         </div>
       </div>
