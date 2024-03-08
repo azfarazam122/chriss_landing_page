@@ -19,6 +19,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="style/style.css" />
     <link
       rel="stylesheet"
@@ -83,16 +91,31 @@
           <!-- Right Side Of Navbar -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link fw-bold text-dark" href=""
-                >ZULASSUNGSDIENSTE <i style="color: #ee472f" class="fa-solid fa-chevron-down"></i
-              ></a>
+              <div class="dropdown">
+                <a class="nav-link fw-bold text-dark" data-bs-toggle="dropdown" aria-expanded="false"
+                  >ZULASSUNGSDIENSTE <i style="color: #ee472f" class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
             </li>
 
-            <li class="nav-item ms-auto">
-              <a class="nav-link fw-bold text-dark" href=""
-                >KENNZEICHENDIENSTE <i style="color: #ee472f" class="fa-solid fa-chevron-down"></i>
-              </a>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link fw-bold text-dark" data-bs-toggle="dropdown" aria-expanded="false"
+                  >KENNZEICHENDIENSTE <i style="color: #ee472f" class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
             </li>
+
             <li class="nav-item ms-auto">
               <a class="nav-link fw-bold text-dark" href="">FAQ</a>
             </li>
@@ -102,26 +125,6 @@
             <li class="nav-item ms-auto">
               <a class="nav-link fw-bold text-dark" href="">FIRMENLOGIN</a>
             </li>
-
-            <!-- <div class="btn-group ms-auto">
-              <span class="py-2 nav-link navbar-custom-dropdown h-100" data-bs-toggle="dropdown" aria-expanded="false">
-                Rechtliches<i class="mx-2 fa-solid fa-angle-down"></i>
-              </span>
-
-              <ul class="dropdown-menu my-0 w-100" style="position: absolute; text-align: start; padding-left: 5px">
-                <li class="nav-item">
-                  <a class="nav-link" href="/datenschutz">{{ __('Datenschutz') }}</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="/agb">{{ __('AGB') }}</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="/impressum">{{ __('Impressum') }}</a>
-                </li>
-              </ul>
-            </div> -->
           </ul>
         </div>
       </div>
@@ -229,7 +232,7 @@
               data-aos-easing="linear"
               data-aos-duration="1000"
               data-aos-once="true"
-              style="width: 300px"
+              style="width: 300px; border-radius: 13px !important"
               class="btn my-4 font-weight-bold atlas-cta cta-green text-uppercase fw-bold"
               >Jetzt beauftragen</a
             >
@@ -365,7 +368,7 @@
           wenigen Klicks.
         </h3>
         <div class="px-3 py-2 rounded" style="background: #f6f8f9">
-          <p class="mt-4" style="color: #666666; font-size: 18px; font-weight: 600">
+          <p class="mt-2" style="color: #666666; font-size: 18px; font-weight: 600">
             Die Abwicklung Ihrer Kfz-Angelegenheiten sollte unkompliziert und stressfrei sein. Deshalb bieten wir Ihnen eine
             transparente und bequeme Lösung, die schon ab 59,99 Euro beginnt. Mit unserer Dienstleistung investieren Sie nicht nur
             in Effizienz; Sie unterstützen auch einen guten Zweck. Für jede durchgeführte Zulassung spenden wir 1,50 Euro an das
@@ -396,7 +399,7 @@
             data-aos-easing="linear"
             data-aos-duration="1000"
             data-aos-once="true"
-            style="width: 300px"
+            style="width: 300px; border-radius: 13px !important"
             class="btn my-4 font-weight-bold atlas-cta cta-green text-uppercase my-5 fw-bold"
             >Zum Onlineformular
           </a>
@@ -918,7 +921,8 @@
           data-aos-easing="linear"
           data-aos-duration="1000"
           data-aos-once="true"
-          class="btn my-4 fs-5 font-weight-bold atlas-cta cta-green text-uppercase fw-bold"
+          style="width: 300px; border-radius: 13px !important"
+          class="btn my-4 font-weight-bold atlas-cta cta-green text-uppercase fw-bold"
           >Zu den weiteren Fragen
         </a>
       </div>
@@ -977,19 +981,19 @@
       </div>
 
       <div class="d-flex flex-wrap justify-content-center mt-5">
-        <div class="p-4 m-4 rounded" style="background-color: #f6f8f9; width: 300px">
+        <div class="p-4 m-4 rounded" style="width: 300px">
           <div class="text-center">
             <h2 class="font-weight-bold">100 %</h2>
             <h5 style="color: #ee472f" class="font-weight-bold">Digitalisierung</h5>
           </div>
         </div>
-        <div class="p-4 m-4 rounded" style="background-color: #f6f8f9; width: 300px">
+        <div class="p-4 m-4 rounded" style="width: 300px">
           <div class="text-center">
             <h2 class="font-weight-bold">10.000 +</h2>
             <h5 style="color: #ee472f" class="font-weight-bold">Anzahl von Kunden</h5>
           </div>
         </div>
-        <div class="p-4 m-4 rounded" style="background-color: #f6f8f9; width: 300px">
+        <div class="p-4 m-4 rounded" style="width: 300px">
           <div class="text-center">
             <h2 class="font-weight-bold">100 %</h2>
             <h5 style="color: #ee472f" class="font-weight-bold">Kundenzufriedenheit</h5>
@@ -1004,7 +1008,8 @@
           data-aos-easing="linear"
           data-aos-duration="1000"
           data-aos-once="true"
-          class="btn my-4 fs-5 font-weight-bold atlas-cta cta-green text-uppercase fw-bold"
+          style="width: 300px; border-radius: 13px !important"
+          class="btn my-4 font-weight-bold atlas-cta cta-green text-uppercase fw-bold"
           >uns kontaktieren
         </a>
       </div>
